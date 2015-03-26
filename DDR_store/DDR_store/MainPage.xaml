@@ -1,0 +1,92 @@
+﻿<Page
+    x:Class="DDR_store.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DDR_store"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FFD5D6D6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="635*"/>
+            <ColumnDefinition Width="48*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="ButtonRead" Content="読み込み" HorizontalAlignment="Left" Margin="1119,570,0,0" VerticalAlignment="Top" Click="Button_Click" FontFamily="Meiryo" FontSize="36" Foreground="Black" Background="#9934F321" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1126,53,0,0" TextWrapping="Wrap" Text="暗証番号1" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontWeight="Bold" FontSize="22"/>
+        <Image x:Name="Picture1" HorizontalAlignment="Left" Height="153" Margin="930,221,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="label8" HorizontalAlignment="Left" Margin="92,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="免許番号"/>
+        <TextBlock x:Name="label0" HorizontalAlignment="Left" Margin="92,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="氏名"/>
+        <TextBlock x:Name="label8_Copy1" HorizontalAlignment="Left" Margin="92,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="ヨミガナ"/>
+        <TextBlock x:Name="label8_Copy2" HorizontalAlignment="Left" Margin="92,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="通称名"/>
+        <TextBlock x:Name="label8_Copy3" HorizontalAlignment="Left" Margin="92,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="統一氏名"/>
+        <TextBlock x:Name="label8_Copy" HorizontalAlignment="Left" Margin="92,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="住所"/>
+        <TextBlock x:Name="label8_Copy4" HorizontalAlignment="Left" Margin="92,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="本籍"/>
+        <TextBlock x:Name="label8_Copy5" HorizontalAlignment="Left" Margin="92,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="条件1"/>
+        <TextBlock x:Name="label8_Copy6" HorizontalAlignment="Left" Margin="92,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="条件2"/>
+        <TextBlock x:Name="label8_Copy7" HorizontalAlignment="Left" Margin="92,379,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="条件3"/>
+        <TextBlock x:Name="label8_Copy8" HorizontalAlignment="Left" Margin="92,417,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="条件4"/>
+        <TextBlock x:Name="label8_Copy9" HorizontalAlignment="Left" Margin="92,474,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="普通"/>
+        <TextBlock x:Name="label8_Copy10" HorizontalAlignment="Left" Margin="92,507,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="大特"/>
+        <TextBlock x:Name="label8_Copy11" HorizontalAlignment="Left" Margin="92,540,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="二小原"/>
+        <TextBlock x:Name="label8_Copy12" HorizontalAlignment="Left" Margin="92,573,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="他" Width="23" RenderTransformOrigin="0.783,-0.091"/>
+        <TextBlock x:Name="label8_Copy13" HorizontalAlignment="Left" Margin="92,606,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="二種" RenderTransformOrigin="0.818,1.485"/>
+        <TextBlock x:Name="label8_Copy14" HorizontalAlignment="Left" Margin="92,639,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="大型" RenderTransformOrigin="0.818,1.485"/>
+        <TextBlock x:Name="label8_Copy15" HorizontalAlignment="Left" Margin="92,672,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="大二" RenderTransformOrigin="0.818,1.485"/>
+        <TextBlock x:Name="label8_Copy16" HorizontalAlignment="Left" Margin="92,705,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="普二" RenderTransformOrigin="0.818,1.485"/>
+        <TextBlock x:Name="label8_Copy17" HorizontalAlignment="Left" Margin="567,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="生年月日"/>
+        <TextBlock x:Name="label8_Copy18" HorizontalAlignment="Left" Margin="567,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="有効期限"/>
+        <TextBlock x:Name="label8_Copy19" HorizontalAlignment="Left" Margin="567,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="区分"/>
+        <TextBlock x:Name="label8_Copy20" HorizontalAlignment="Left" Margin="567,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="公安名"/>
+        <TextBlock x:Name="label8_Copy21" HorizontalAlignment="Left" Margin="567,474,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="大特二"/>
+        <TextBlock x:Name="label8_Copy22" HorizontalAlignment="Left" Margin="567,507,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="け引二"/>
+        <TextBlock x:Name="label8_Copy23" HorizontalAlignment="Left" Margin="567,540,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="中型"/>
+        <TextBlock x:Name="label8_Copy24" HorizontalAlignment="Left" Margin="567,573,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="中二"/>
+        <TextBlock x:Name="label8_Copy25" HorizontalAlignment="Left" Margin="567,606,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="大自二"/>
+        <TextBlock x:Name="label8_Copy26" HorizontalAlignment="Left" Margin="567,639,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="普自二"/>
+        <TextBlock x:Name="label8_Copy27" HorizontalAlignment="Left" Margin="567,672,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="小特"/>
+        <TextBlock x:Name="label8_Copy28" HorizontalAlignment="Left" Margin="567,705,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="原付"/>
+        <TextBlock x:Name="label8_Copy29" HorizontalAlignment="Left" Margin="567,441,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="け引"/>
+        <TextBlock x:Name="labelNumber" HorizontalAlignment="Left" Margin="200,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelName" HorizontalAlignment="Left" Margin="200,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelYomikana" HorizontalAlignment="Left" Margin="200,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelTusyo" HorizontalAlignment="Left" Margin="200,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelToitu" HorizontalAlignment="Left" Margin="200,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelAdr" HorizontalAlignment="Left" Margin="200,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelHonseki" HorizontalAlignment="Left" Margin="200,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelJyoken1" HorizontalAlignment="Left" Margin="200,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelJyoken2" HorizontalAlignment="Left" Margin="200,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelJyoken3" HorizontalAlignment="Left" Margin="200,379,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelJyoken4" HorizontalAlignment="Left" Margin="200,417,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelFutu" HorizontalAlignment="Left" Margin="200,474,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelDaitoku" HorizontalAlignment="Left" Margin="200,507,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelNisyogen" HorizontalAlignment="Left" Margin="200,540,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelHoka" HorizontalAlignment="Left" Margin="200,573,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelNisyu" HorizontalAlignment="Left" Margin="200,606,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelOgata" HorizontalAlignment="Left" Margin="200,639,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelDaini" HorizontalAlignment="Left" Margin="200,672,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelFuni" HorizontalAlignment="Left" Margin="200,705,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelBirth" HorizontalAlignment="Left" Margin="686,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelKigen" HorizontalAlignment="Left" Margin="686,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelKubun" HorizontalAlignment="Left" Margin="686,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold"/>
+        <TextBlock x:Name="labelKoan" HorizontalAlignment="Left" Margin="686,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelKenbiki" HorizontalAlignment="Left" Margin="686,441,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelDaitokuni" HorizontalAlignment="Left" Margin="686,474,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelkehikini" HorizontalAlignment="Left" Margin="686,507,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelChugata" HorizontalAlignment="Left" Margin="686,540,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelChuni" HorizontalAlignment="Left" Margin="686,573,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelDaijini" HorizontalAlignment="Left" Margin="686,606,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelFujini" HorizontalAlignment="Left" Margin="686,639,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelSyotoku" HorizontalAlignment="Left" Margin="686,672,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="labelGentuki" HorizontalAlignment="Left" Margin="686,705,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" Text="_____" FontWeight="Bold" />
+        <TextBlock x:Name="label8_Copy30" HorizontalAlignment="Left" Margin="1066,705,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="22" FontWeight="Bold" Text="ICカード運転免許証リーダー" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1255,738,0,0" TextWrapping="Wrap" Text="Ver 0.01" VerticalAlignment="Top" Foreground="Black" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1126,189,0,0" TextWrapping="Wrap" Text="暗証番号2" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontWeight="Bold" FontSize="22"/>
+        <PasswordBox x:Name="textBoxPass1" HorizontalAlignment="Left" Margin="1122,86,0,0" VerticalAlignment="Top" FontFamily="Meiryo" FontSize="24" FontWeight="Bold" MaxLength="4" Height="50" Width="122"/>
+        <PasswordBox x:Name="textBoxPass2" HorizontalAlignment="Left" Margin="1122,227,0,0" VerticalAlignment="Top" FontFamily="Meiryo" FontSize="24" FontWeight="Bold" MaxLength="4" Height="50" Width="122"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1043,658,0,0" TextWrapping="Wrap" Text="カードR/W" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="13"/>
+        <TextBlock x:Name="CardRWtext" HorizontalAlignment="Left" Margin="1122,658,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontFamily="Meiryo" FontSize="13" Text="____"/>
+        <Button x:Name="ButtonStop" Content="中断" HorizontalAlignment="Left" Margin="1119,570,0,0" VerticalAlignment="Top" Click="ButtonStop_Click" FontFamily="Meiryo" FontSize="36" Foreground="Black" Background="#99FB0F0F" Grid.ColumnSpan="2" Width="178"/>
+
+    </Grid>
+</Page>
